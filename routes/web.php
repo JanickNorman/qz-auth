@@ -11,6 +11,8 @@
 |
 */
 
+Route::post('/redirectToQlik', 'HomeController@redirectToQlik')->name('redirectToQlik');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,5 +20,3 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::post('redirectToQlik', 'HomeController@redirectToQlik')->name('redirectToQlik');
