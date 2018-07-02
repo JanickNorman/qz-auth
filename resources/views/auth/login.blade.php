@@ -30,7 +30,7 @@
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
-                                {{dd($errors)}}
+
                                 @if ($errors->has('username'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('username') }}</strong>
@@ -81,4 +81,5 @@
         </div>
     </div>
 </div>
+                                {{dd($errors)}}
 @endsection
