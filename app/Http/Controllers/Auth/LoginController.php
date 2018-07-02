@@ -65,8 +65,8 @@ class LoginController extends Controller
         ===========================================================================================================*/
 
         //== Get POST parameter values USER_ID & USER_DIRECTORY
-        $userdir = $_POST["userdir"];
-        $userid = $_POST["userid"];
+        $userdir = "INTERNAL";
+        $userid = 1;
 
         //== Define Qlik Proxy Service URL API services
         // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
@@ -150,7 +150,7 @@ class LoginController extends Controller
 
         	//== Redirection to QLIK Dashboard Apps once we get the tickets.
         	header('Location: '. $QlikTargetURL . '&QlikTicket=' . $ticket["Ticket"]);
-        
+
           return $this->sendLoginResponse($request);
           // return redirect()->route('redirectToQlik');
       }
