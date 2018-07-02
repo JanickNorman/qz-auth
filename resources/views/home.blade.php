@@ -13,8 +13,8 @@
 ===========================================================================================================*/
 
 //== Get POST parameter values USER_ID & USER_DIRECTORY
-$userdir = "arriba";
-$userid = "cartel";
+$userdir = $_POST["userdir"] ?: "arriba";
+$userid = $_POST["userid"] ?: "cartel";
 
 //== Define Qlik Proxy Service URL API services
 // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
