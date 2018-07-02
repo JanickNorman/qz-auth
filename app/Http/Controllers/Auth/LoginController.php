@@ -65,13 +65,13 @@ class LoginController extends Controller
         ===========================================================================================================*/
 
         //== Get POST parameter values USER_ID & USER_DIRECTORY
-        $userdir = "INTERNAL";
-        $userid = 1;
+        $userdir ="INTERNAL";
+        $userid = "qz@ts.com";
 
         //== Define Qlik Proxy Service URL API services
         // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
         $virtual_proxy	= 'dashboard'; // Qlik Sense Virtual Proxy
-        $proxyRestUri 	= 'https://qliksense:4243/qps/' . $virtual_proxy;
+        $proxyRestUri 	= 'https://52.221.249.56/hub/' . $virtual_proxy;
 
         //== Define Target Redirection after Getting QLIK Tickets
         // $QlikTargetURL 	= 'https://qliksense/bcaphp/hub';
@@ -121,7 +121,7 @@ class LoginController extends Controller
 
         //== Execute CURL !
         $response = curl_exec($request);
-        dd($response);
+
         //== Close CURL Connection
         curl_close($request);
 
