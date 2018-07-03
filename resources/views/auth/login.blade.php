@@ -43,7 +43,7 @@
             <div id="login-sub-container">
                     <div id="login-sub-header">
 
-                        <img class="main-logo" src="/cPanel_magic_revision_1454274333/unprotected/cpanel/images/webmail-logo.svg" alt="logo">
+                        <!-- <img class="main-logo" src="/cPanel_magic_revision_1454274333/unprotected/cpanel/images/webmail-logo.svg" alt="logo"> -->
 
                     </div>
                     <div id="login-sub">
