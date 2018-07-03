@@ -99,12 +99,12 @@ class LoginController extends Controller
         $internal_sa = array('UserDirectory: INTERNAL', 'UserId: sa_repository');
 
         //== Initialize CURL
-        $request = curl_init();
+        $curl_request = curl_init();
 
         //== Setup CURL Options
         $options 				= array(
         	CURLOPT_URL 			=> $url, // URL to QPS Server
-        	CURLOPT_SSLCERT 		=> $cert_file, // SSL Certificates on server
+        	CURLOPT_SSLCERT 		=> public() . $cert_file, // SSL Certificates on server
         	/*CURLOPT_SSLCERTPASSWD => $cert_password,*/
         	CURLOPT_RETURNTRANSFER 	=> true, // Response back to this file after POST
         	CURLOPT_FOLLOWLOCATION 	=> true, // tell libcurl to follow redirection
@@ -117,18 +117,18 @@ class LoginController extends Controller
         	);
 
         //== Set multiple options for a cURL transfer
-        curl_setopt_array($request , $options);
+        curl_setopt_array($curl_request , $options);
 
         //== Execute CURL !
-        $response = curl_exec($request);
+        $response = curl_exec($curl_request);
 
         //== Close CURL Connection
-        curl_close($request);
+        curl_close($curl_request);
 
         //== CURL Error Handling
         if(!$response)
         	{
-        	  echo "Curl Error : " . curl_error($request);
+        	  echo "Curl Error : " . curl_error($curl_request);
         	}
         else
         	{
