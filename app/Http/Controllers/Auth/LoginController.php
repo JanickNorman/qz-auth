@@ -65,8 +65,8 @@ class LoginController extends Controller
         ===========================================================================================================*/
 
         //== Get POST parameter values USER_ID & USER_DIRECTORY
-        $userdir ="INTERNAL";
-        $userid = "qz@ts.com";
+        $userdir ="win-6k532ka015c";
+        $userid = "ADMINISTRATOR";
 
         //== Define Qlik Proxy Service URL API services
         // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
@@ -75,7 +75,7 @@ class LoginController extends Controller
 
         //== Define Target Redirection after Getting QLIK Tickets
         // $QlikTargetURL 	= 'https://qliksense/bcaphp/hub';
-        $QlikTargetURL 	= 'https://qliksense/bcaphp/single/?appid=e3ac97b2-22bb-43a7-a48e-6b810b18538d&sheet=2a14aa66-1ac6-4fda-89e7-3ae9e56dfd7b&opt=nointeraction&select=clearall';
+        $QlikTargetURL 	= 'https://52.221.249.56/dashboard/hub';
 
         //== Define XREF key for Internal mandatory required Attributes
         $url = $proxyRestUri . '/ticket?Xrfkey=1234567890abcdef';
