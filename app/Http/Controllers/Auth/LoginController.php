@@ -85,8 +85,9 @@ class LoginController extends Controller
         // Please Note that Qlik Sense certificate must be exported to WIndows PFX first and then converted manually to PEM with OPENSSL for CURL works.
         // Using : openssl pkcs12 -in client.pfx -out client.pem –nodes
         //----------------------------------------------------------------------------------------------------------------------------------------------
-        $cert_file = 'c:\cert\client.pem';
-        dd(public_path().'/public');
+        //$cert_file = 'c:\cert\client.pem';
+        $cert_file = public_path().'/client.pem'
+        // dd(public_path().'/client.pem');
         //----------------------------------------------------------------------------------------------------------------------------------------------
 
         //== Define Passed Parameter for User Authenticated
