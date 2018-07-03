@@ -123,7 +123,7 @@ class LoginController extends Controller
 
         //== Execute CURL !
         $response = curl_exec($curl_request);
-
+        dd($response);
         //== Close CURL Connection
         curl_close($curl_request);
 
