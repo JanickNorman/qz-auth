@@ -72,39 +72,6 @@
                                                                     </div>
                                 <div class="clear" id="push"></div>
                             </form>
-                            <form novalidate="" id="login_form" action="{{ route('login') }}" method="post" target="_top" style="visibility:" aria-label="{{ __('Login') }}">
-                                @csrf
-
-                                <!-- <div class="form-group row">
-                                    <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                                    <div class="col-md-6">
-                                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-
-                                        @if ($errors->has('email'))
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('email') }}</strong>
-                                            </span>
-                                        @endif
-                                    </div>
-                                </div>                                 -->
-
-                                <div class="input-req-login"><label for="user">Email Address</label></div>
-                                <div class="input-field-login icon username-container">
-                                    <input name="email" id="user" autofocus="autofocus" value="{{ old('email') }}" placeholder="Enter your email address." class="std_textbox" type="text" tabindex="1" required="">
-                                </div>
-                                <div class="input-req-login login-password-field-label"><label for="pass">Password</label></div>
-                                <div class="input-field-login icon password-container">
-                                    <input name="password" id="pass" placeholder="Enter your email password." class="std_textbox" type="password" tabindex="2" required="">
-                                </div>
-                                <div class="controls">
-                                    <div class="login-btn">
-                                        <button name="login" type="submit" id="login_submit" tabindex="3">Log in</button>
-                                    </div>
-
-                                                                    </div>
-                                <div class="clear" id="push"></div>
-                            </form>
                         <!--CLOSE forms -->
                         </div>
                     <!--CLOSE login-sub -->
