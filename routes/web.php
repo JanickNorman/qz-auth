@@ -14,7 +14,7 @@
 Route::post('/redirectToQlik', 'HomeController@redirectToQlik')->name('redirectToQlik');
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('home');
 });
 
 Auth::routes();
