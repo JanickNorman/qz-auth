@@ -151,7 +151,6 @@ class LoginController extends Controller
         	//== Redirection to QLIK Dashboard Apps once we get the tickets.
         	header('Location: '. $QlikTargetURL . '&QlikTicket=' . $ticket["Ticket"]);
 
-          // BY NORMAN: THIS IS FOR LARAVEL REDIRECTION PURPOSE
           return $this->sendLoginResponse($request);
           // return redirect()->route('redirectToQlik');
       }
