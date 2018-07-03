@@ -86,7 +86,7 @@ class LoginController extends Controller
         // Using : openssl pkcs12 -in client.pfx -out client.pem –nodes
         //----------------------------------------------------------------------------------------------------------------------------------------------
         //$cert_file = 'c:\cert\client.pem';
-        $cert_file = public_path().'/client.pem'
+        $cert_file = public_path().'/client.pem';
         // dd(public_path().'/client.pem');
         //----------------------------------------------------------------------------------------------------------------------------------------------
 
