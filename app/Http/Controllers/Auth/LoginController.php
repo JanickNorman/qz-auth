@@ -105,7 +105,7 @@ class LoginController extends Controller
         //== Setup CURL Options
         $options 				= array(
         	CURLOPT_URL 			=> $url, // URL to QPS Server
-        	CURLOPT_SSLCERT 		=> public() . $cert_file, // SSL Certificates on server
+        	CURLOPT_SSLCERT 		=> $cert_file, // SSL Certificates on server
         	/*CURLOPT_SSLCERTPASSWD => $cert_password,*/
         	CURLOPT_RETURNTRANSFER 	=> true, // Response back to this file after POST
         	CURLOPT_FOLLOWLOCATION 	=> true, // tell libcurl to follow redirection
