@@ -89,8 +89,8 @@ class LoginController extends Controller
 
         //== Define Passed Parameter for User Authenticated
         $req_fields = array(
-         'UserDirectory' => 'win-6k532ka015c',
-         'UserId' => 'Administrator',
+         'UserDirectory' => $userdir,
+         'UserId' => $userid,
          'Attributes' => array()
         );
 
