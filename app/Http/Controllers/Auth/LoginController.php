@@ -150,7 +150,6 @@ class LoginController extends Controller
             //== Redirection to QLIK Dashboard Apps once we get the tickets.
             // header('Location: '. $QlikTargetURL . '?QlikTicket=' . $ticket["Ticket"]);
             return redirect()->away($QlikTargetURL . '?QlikTicket=' . $ticket["Ticket"]);
-
       }
 
       // If the login attempt was unsuccessful we will increment the number of attempts
