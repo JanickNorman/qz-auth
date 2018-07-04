@@ -43,7 +43,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('UserID') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+                                <input id="name" type="text" class="form-control{{ $errors->has('userid') ? ' is-invalid' : '' }}" name="userid" value="{{ old('userid') }}" required autofocus>
 
                                 @if ($errors->has('userid'))
                                     <span class="invalid-feedback" role="alert">
