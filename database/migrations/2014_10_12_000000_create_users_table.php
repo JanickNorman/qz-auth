@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
         });
 
         Schema::create('users_attribute', function (Blueprint $table) {
-            $table->unsignedInteger('userid')
+            $table->unsignedInteger('userid');
             $table->string('type');
             $table->string('value');
 
