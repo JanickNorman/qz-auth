@@ -65,7 +65,7 @@ class LoginController extends Controller
         ===========================================================================================================*/
 
         //== Get POST parameter values USER_ID & USER_DIRECTORY
-        $userdir = "WIN-6K532KA015C";
+        $userdir = "POSTGRES";
         $userid = \Auth::user()->userid;
 
         //== Define Qlik Proxy Service URL API services
