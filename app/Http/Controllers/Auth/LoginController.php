@@ -52,7 +52,7 @@ class LoginController extends Controller
       }
 
       if ($this->attemptLogin($request)) {
-          dd(\Auth::user()->name);
+          dd("hello" . \Auth::user()->name);
         /*==========================================================================================================
 
         	getticket.php
