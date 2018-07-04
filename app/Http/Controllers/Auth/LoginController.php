@@ -67,7 +67,7 @@ class LoginController extends Controller
         //== Get POST parameter values USER_ID & USER_DIRECTORY
         $userdir = "win-6k532ka015c";
         $userid = \Auth::user()->username;
-        
+        dd($userid);
         //== Define Qlik Proxy Service URL API services
         // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
         $virtual_proxy    = 'dashboard'; // Qlik Sense Virtual Proxy
