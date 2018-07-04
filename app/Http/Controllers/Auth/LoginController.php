@@ -65,8 +65,8 @@ class LoginController extends Controller
         ===========================================================================================================*/
 
         //== Get POST parameter values USER_ID & USER_DIRECTORY
-        //$userdir = $_POST["userdir"];
-        //$userid = $_POST["userid"];
+        $userdir = "win-6k532ka015c";
+        $userid = $request->get('username');
 
         //== Define Qlik Proxy Service URL API services
         // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
