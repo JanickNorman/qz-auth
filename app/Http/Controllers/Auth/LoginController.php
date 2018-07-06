@@ -40,10 +40,6 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-      if (\Auth::check()) {
-        return redirect()->route('home');
-      }
-
       $this->validateLogin($request);
 
       // If the class is using the ThrottlesLogins trait, we can automatically throttle
