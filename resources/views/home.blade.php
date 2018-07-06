@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! as <b>{{ $userid }}</b>
+                    <br>
+                    <a href="route()"></a>
                 </div>
             </div>
         </div>

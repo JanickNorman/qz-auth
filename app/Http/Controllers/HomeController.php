@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $userid = \Auth::user()->userid;
+        return view('home', compact("userid"));
+    }
+
+    public function qlik()
+    {
+      return redirectToQlik();
     }
 }
