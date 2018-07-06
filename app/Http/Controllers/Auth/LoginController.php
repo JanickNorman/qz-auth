@@ -52,6 +52,9 @@ class LoginController extends Controller
       }
 
       if ($this->attemptLogin($request)) {
+        if (Auth::check()) {
+          return redirect()->route('home');
+        }
         return redirectToQlik();
       }
 
