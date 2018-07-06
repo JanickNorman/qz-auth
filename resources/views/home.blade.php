@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in! as <b>{{ $userid }}</b>
+                    You are logged in!
                     <br>
-                    <a href="route()"></a>
+                    <a href="{{route('qlik')}}">Go to Qlik account</a>
                 </div>
             </div>
         </div>
