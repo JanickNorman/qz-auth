@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/qlik', 'HomeController@qlik')->name('qlik');
+
 //
 // Route::get('qlik', function() {
 //   /*==========================================================================================================
