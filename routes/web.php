@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('tes/trigger', function(Request $request) {
+  return "tes";
+});
 
 Route::post('/redirectToQlik', 'HomeController@redirectToQlik')->name('redirectToQlik');
 
