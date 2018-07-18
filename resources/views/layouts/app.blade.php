@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a  href="{{ url('/') }}" class="navbar-brand"><img width="30em" src="https://cdn.techinasia.com/data/images/22a6fb62cedda0d0943ea24e3b83d85c.png">
+                <a  href="{{ url('/') }}" class="navbar-brand"><img width="30em" src="https://files.slack.com/files-pri/T2EG31X5E-FBSLERKUH/tree-solutions-square-logo-white.png">
     Insight Dashboard</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
