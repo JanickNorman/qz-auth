@@ -20,10 +20,10 @@ function redirectToQlik() {
   //== Define Qlik Proxy Service URL API services
   // Syntax : https://<qliksense server> : <port qps> / <virtual proxy>
   $virtual_proxy    = 'dashboard'; // Qlik Sense Virtual Proxy
-  $proxyRestUri     = 'https://52.221.249.56:4243/qps/' . $virtual_proxy;
+  $proxyRestUri     = 'https://54.255.149.96:4243/qps/' . $virtual_proxy;
 
   //== Define Target Redirection after Getting QLIK Tickets
-  $QlikTargetURL     = 'https://52.221.249.56/'.$virtual_proxy.'/hub';
+  $QlikTargetURL     = 'https://54.255.149.96/'.$virtual_proxy.'/hub';
   //    echo $QlikTargetURL;
   //== Define XREF key for Internal mandatory required Attributes
   $url = $proxyRestUri . '/ticket?Xrfkey=1234567890abcdef';
